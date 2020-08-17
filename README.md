@@ -25,5 +25,5 @@ To begin with, we will first implement depth estimation of keyframe (5.3 Global 
 - **06 Aug '20:**
 Setup cmake project with opencv dependency. Intellisense was not working in vscode. Turns out had somehow missed popup asking *use compile_commands.json from `build` dir for intellisense* which created entry `            "compileCommands": "${workspaceFolder}/build/compile_commands.json"`. Build tested with read image. 
 
-- **07'Aug 20:**
-`todo`
+- **16 Aug '20:**
+c++ implementation discontinued. Reasons include Eigen library is not well documented, eg. constructor for matrix from array, is it row major or column major. Debugging becomes tough for non-native types, can't visualize matrix other than raw data. Unable to get natvis file with vscode cmake debug task. natvis seems well documented for visual studio rather than vscode. Was able to successfully visualize with [python lldb script](https://github.com/tehrengruber/LLDB-Eigen-Data-Formatter). But still can't debug matrix experession like inverse. All this demanded too much attention on the impl. side than theoretical. I decide to use python instead as all of above problems are solved there. One shortcoming is ofcorse that we loose static type checking and separate static impl. will be needed for production and GPU. But pros far outweight cons as rapid prototyping is need of current time.
