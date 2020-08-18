@@ -32,3 +32,7 @@ Setup cmake project with opencv dependency. Intellisense was not working in vsco
 
 - **16 Aug '20:**
 c++ implementation discontinued. Reasons include Eigen library is not well documented, eg. constructor for matrix from array, is it row major or column major. Debugging becomes tough for non-native types, can't visualize matrix other than raw data. Unable to get natvis file with vscode cmake debug task. natvis seems well documented for visual studio rather than vscode. Was able to successfully visualize with [python lldb script](https://github.com/tehrengruber/LLDB-Eigen-Data-Formatter). But still can't debug matrix experession like inverse. All this demanded too much attention on the impl. side than theoretical. I decide to use python instead as all of above problems are solved there. One shortcoming is ofcorse that we loose static type checking and separate static impl. will be needed for production and GPU. But pros far outweight cons as rapid prototyping is need of current time.
+
+- **18 Aug '20:**
+Photometric loss vs depth plotted for a marker point in Fountain-P11 dataset. Photometric loss along epipolar line can be noisy without clear minimum if only 1 corresponding frame is considered but, clear minimum can be seen by taking all the images in sequence with covisibility. Average has a clear local minima.
+![Alt text](res/photometric_loss_vs_depth__Fountain_P11.png?raw=true "Averaged Photometric loss in sequence frames")
