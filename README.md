@@ -9,6 +9,11 @@ Reasons for implementation:
 ## Resources
 [Dense Visual SLAM - R.A. Newcombe, Phd. Thesis](https://www.doc.ic.ac.uk/~ajd/Publications/newcombe_phd2012.pdf)<span id="newcombe-thesis"></span>
 
+[On Benchmarking Camera Calibration and Multi-View Stereo for High Resolution Imagery - C. Strecha](https://documents.epfl.ch/groups/c/cv/cvlab-unit/www/data/multiview/denseMVS.html)
+
+[super3d - Kitware impl. (looks similar to DTAM)](https://github.com/Kitware/super3d)
+
+[Telesculptor - End to end 3d reconstruction for UAV videos (Kitware)](https://github.com/Kitware/TeleSculptor)
 ## Development log
 > New entry is created with [snippet](.vscode/snippets/markdown.json) in vscode using prefix `log`. User defined snippets [doc](https://code.visualstudio.com/docs/editor/userdefinedsnippets).
 
